@@ -9,9 +9,16 @@ header {
       align-items: center;
       justify-content: space-between;
 
+      @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        height: 8vh;
+      }
+
       .logo {
         h1 {
           font-weight: 700;
+          font-size: 3rem;
         }
       }
 
@@ -20,11 +27,19 @@ header {
         width: 45%;
         justify-content: space-evenly;
 
+        @media @mobile {
+          width: 100%;
+        }
+
         a {
           text-decoration: none;
           color: @shark;
           font-weight: 700;
           font-size: 1.6rem;
+
+          @media mobile {
+            font-size: 1rem;
+          }
         }
       }
     }
@@ -37,6 +52,12 @@ header {
 
     .text-container {
       border-bottom: 2px dashed @navigation-border;
+
+      @media @mobile {
+        p {
+          font-size: 1.025rem;
+        }
+      }
     }
   }
 }
