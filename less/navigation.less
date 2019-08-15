@@ -1,1 +1,42 @@
-// Navigation Styles here
+header {
+  nav {
+    border-bottom: 2px dashed @navigation-border;
+    height: 10vh;
+    display: flex;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        h1 {
+          font-weight: 700;
+        }
+      }
+
+      .links {
+        display: flex;
+        width: 45%;
+        justify-content: space-evenly;
+
+        a {
+          text-decoration: none;
+          color: @shark;
+          font-weight: 700;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  .container {
+    img {
+      margin-bottom: 3%;
+    }
+
+    .text-container {
+      border-bottom: 2px dashed @navigation-border;
+    }
+  }
+}
